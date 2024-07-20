@@ -1,0 +1,160 @@
+.best-seller {
+    position: relative;
+    width: 100%;
+}
+
+.best-seller h1 {
+    color: #3A3A3A;
+    font-family: 'Federo';
+    size: 40px;
+    margin: 80px 0 40px 0;
+}
+
+.best-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-auto-rows: max-content;
+    padding: 10px;
+}
+
+.best-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid rgb(224, 224, 224);
+    margin-bottom: 20px;
+    position: relative;
+    align-self: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.best-card-img {
+    width: 70%;
+    height: 60%;
+}
+
+.best-card-img img {
+    width: 70%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.best-card-text {
+    width: 100%;
+}
+
+.best-card-text h5 {
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+
+.best-card-text p {
+    opacity: 0.8;
+}
+
+.best-button-group {
+    position: absolute;
+    right: 10px;
+    bottom: 120px;
+    display: grid;
+}
+
+.best-button-group svg {
+    font-size: 28px;
+    margin: 5px 0;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 3px;
+    cursor: pointer;
+
+}
+
+.best-hot-mark {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: #F29731;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 20px;
+    text-transform: uppercase;
+}
+
+.best-hot-mark p {
+    margin: 0;
+}
+
+.best-sale-mark {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #9E0B0F;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 17px;
+    text-transform: uppercase;
+}
+
+.best-sale-mark p {
+    margin: 0;
+}
+
+.best-seller-decor {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    background-color: #f3f3f3;
+    ;
+    z-index: -1;
+    top: -30%;
+    right: 0;
+}
+
+@media (max-width: 480px) {
+    .best-cards {
+        grid-template-columns: 1fr   1fr;
+        column-gap: 10px;
+    }
+    .best-card {
+        height: 220px;
+    }
+    .best-card-text h5{
+        font-size: 13px;
+    }
+    .best-card-text p{
+        font-size: 12px;
+    }
+
+    .best-button-group {
+        right: 7px;
+        bottom: 85px;
+    }
+    .best-button-group svg {
+        font-size: 22px;
+        margin: 2px 0;
+    }
+    .best-hot-mark {
+        top: 6px;
+        font-size: 12px;
+        padding: 2px 12px;
+    }
+
+    .best-sale-mark {
+        top: 30px;
+        font-size: 12px;
+        padding: 2px 9px;
+    }
+
+    .best-seller-decor {
+        width: 80%;
+        height: 20%;
+        background-color: #f3f3f3;
+        z-index: -1;
+        top: -5%;
+        right: 0;
+    }
+}

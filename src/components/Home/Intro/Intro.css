@@ -1,0 +1,66 @@
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+}
+
+.intro-img{
+    width: 40%;
+   
+}
+
+.intro-text{
+    width: 40%;
+    text-align: start;
+}
+
+.intro-text h1{
+    font-family: 'Federo';
+    color: #3A3A3A;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.shop-now-btn{
+    width: fit-content;
+    height: 40px;
+    background-color: #434343;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+@media (max-width: 480px) {
+    .intro{
+        height: 60vh;
+    }
+
+    .intro-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: -9;
+    }
+    .intro-text{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .intro-text h1{
+        font-size: 32px;
+    }
+
+    .shop-now-btn{
+        width: fit-content;
+        height: 30px;
+        font-size: 10px;
+        padding: 0 15px;
+    }
+
+   
+}
